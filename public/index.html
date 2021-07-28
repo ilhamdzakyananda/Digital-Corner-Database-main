@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport"
+	content = "width = device-width, initial-scale = 1.0">
+	<title>Digital Corner</title>
+	<link rel = "stylesheet" href = "styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	
+</head>
+<body>
+
+	<nav class="navbar">
+      <div class="navbar_container">
+        <a href="#home" id = "navbar_logo">Digital Corner</a>
+        <div class="navbar_toggle" id="mobile-menu">
+          <span class="bar"></span> 
+		  <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+          <li class="navbar_item">
+            <a href="#home" class="navbar_links" id="home-page">Home</a>
+          </li>
+          <li class="navbar_item">
+            <a href="#about" class="navbar_links" id="about-page">About</a>
+          </li>
+		  <li class="navbar_item">
+            <a href="#features" class="navbar_links" id="gallery-page">Features</a>
+          </li>
+		  <li class="navbar_item">
+            <a href="#" class="navbar_links" id="download-page">Gallery</a>
+			<ul class="sub-menu">
+                <li class="menu-item"><a href="Gambar/index.html">Gambar</a></li>
+                <li class="menu-item"><a href="source/music.html">Musik</a></li>
+                <li class="menu-item"><a href="Video/video.html">Video</a></li>
+            </ul>
+          </li>
+		  <li class="navbar_btn">
+            <a href="login.html" class="button" id="signup">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+	
+	<div class = "hero" id="home">
+		<div class = "hero_container">
+			<h1 class="hero_heading"><span>Digital Corner</span></h1>
+			<p class="hero_description">"A Place To Chill"</p>
+		</div>
+	</div>
+		
+	<div class = "main" id="about">
+		<div class = "main_container">
+			<div class = "main_img_container">
+				<div class = "main_img_card"><i class="fas fa-book"></i></div>
+			</div>
+			<div class = "main_content"> 
+				<h1>ABOUT</h1>
+				<h2>Pelajari Lebih Banyak Tentang Kami</h2>
+				<button class ="main_btn"><a href = "About\about.html">Read More</a></button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="features" id="features">
+      <h1>Our features</h1>
+      <div class="features_wrapper">
+        <div class="features_card">
+          <h2>GAMBAR</h2><i class="fas fa-image"></i>
+          <p>Berbagai macam gambar menarik yang bisa Anda download</p>
+          <div class="features_btn"><button><a href="Gambar/index.html">Explore</a></button></div>
+        </div>
+        <div class="features_card">
+          <h2>MUSIK</h2><i class="fas fa-music"></i>
+          <p>Hiasi hari - hari Anda dengan musik rekomendasi</p>
+          <div class="features_btn"><button><a href = "source/music.html">Explore</a></button></div>
+        </div>
+        <div class="features_card">
+          <h2>VIDEO</h2><i class="fas fa-video"></i>
+          <p>Kumpulan video yang dapat menghibur Anda</p>
+          <div class="features_btn"><button><a href ="Video/video.html">Explore</a></button></div>
+        </div>
+      </div>
+    </div>
+	
+	<div class="footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Digital Corner</a>
+          </div>
+          <p class="website__rights">© Digital Corner 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/yuaris.gokil" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/yuaris_arham/?hl=id" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCUuNzNGOfj79dYgeNhgE2jA" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://soundcloud.com/lone_sheep" class="social__icon--link"
+              ><i class="fab fa-soundcloud"></i
+            ></a>
+            <a href="https://twitter.com/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+	
+	<script src ="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    
+    <style>
+    * {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		font-family: 'Kumbh Sans', sans-serif;
+		scroll-behavior: smooth;
+	}
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_container">
+          <a href="index.html" id = "navbar_logo">Digital Corner</a>
+          <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar_menu">
+            <li class="navbar_item">
+              <a href="index.html" class="navbar_links" id="home-page">Home</a>
+            </li>
+            <li class="navbar_item">
+              <a href="About/about.html" class="navbar_links" id="about-page">About</a>
+            </li>
+            <li class="navbar_item">
+              <a href="index.html#features" class="navbar_links" id="gallery-page">Features</a>
+            </li>
+            <li class="navbar_item">
+              <a href="#download" class="navbar_links" id="download-page">Gallery</a>
+              <ul class="sub-menu">
+                  <li class="menu-item"><a href="Gambar/index.html">Gambar</a></li>
+                  <li class="menu-item"><a href="source/music.html">Musik</a></li>
+                  <li class="menu-item"><a href="Video/video.html">Video</a></li>
+              </ul>
+            </li>
+            <li class="navbar_btn">
+              <a href="login.html" class="button" id="signup">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="w3-content" style="max-width:1500px">
+        <footer class="w3-black w3-padding-64 w3-center"> 
+        <div class="row">
+            <div class="col-md-3">
+    
+            </div>
+            <div class="col-md-6 main">
+                <form action="/login" method="POST">
+                    <h2>USER LOGIN</h2>
+                    <input type="text" class="box" id="username" name="username" placeholder="Username" required />
+                    <br>
+                    <input type="password" class="box" id="password" name="password" placeholder="Password" required />
+                    <br>
+                    <input type="submit" value="Submit" id="submit" />
+                </form>
+            </div>
+        </div>
+        <br>
+  <p> Don't have an account?<a href="signup.html"  class="w3-hover-text-green"> Sign Up here </a></p>
+        </footer>
+    </div> 
+
+  <div class="footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Digital Corner</a>
+          </div>
+          <p class="website__rights">© Digital Corner 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/yuaris.gokil" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/yuaris_arham/?hl=id" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCUuNzNGOfj79dYgeNhgE2jA" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://soundcloud.com/lone_sheep" class="social__icon--link"
+              ><i class="fab fa-soundcloud"></i
+            ></a>
+            <a href="https://twitter.com/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+   </div>
+</body>
+</html>

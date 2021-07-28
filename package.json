@@ -1,0 +1,20 @@
+{
+  "name": "nodejsassignment",
+  "version": "1.0.0",
+  "description": "registration and login form using nodejs and mongoDB  where ever u r putting index.js file open terminal and run \"npm init\" so that u get node_modules...",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "Yuaris Arham",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.15",
+    "nodemon": "^2.0.12"
+  }
+}

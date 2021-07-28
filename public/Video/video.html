@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport"
+	content = "width = device-width, initial-scale = 1.0">
+	<title>Video Gallery</title>
+	<link rel = "stylesheet" href = "style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	
+</head>
+<body>
+
+	<nav class="navbar">
+		<div class="navbar_container">
+		  <a href="..\index.html" id = "navbar_logo">Digital Corner</a>
+		  <div class="navbar_toggle" id="mobile-menu">
+			<span class="bar"></span> 
+			<span class="bar"></span>
+			<span class="bar"></span>
+		  </div>
+		  <ul class="navbar_menu">
+			<li class="navbar_item">
+			  <a href="..\index.html" class="navbar_links" id="home-page">Home</a>
+			</li>
+			<li class="navbar_item">
+			  <a href="..\About\about.html" class="navbar_links" id="about-page">About</a>
+			</li>
+			<li class="navbar_item">
+			  <a href="..\index.html#features" class="navbar_links" id="gallery-page">Features</a>
+			</li>
+			<li class="navbar_item">
+			  <a href="#download" class="navbar_links" id="download-page">Gallery</a>
+			  <ul class="sub-menu">
+				  <li class="menu-item"><a href="..\Gambar\index.html">Gambar</a></li>
+				  <li class="menu-item"><a href="..\source\music.html">Musik</a></li>
+				  <li class="menu-item"><a href="..\Video\video.html">Video</a></li>
+			  </ul>
+			</li>
+			<li class="navbar_btn">
+			  <a href="..\login.html" class="button" id="signup">Login</a>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+	
+	
+	
+	<div class="container">
+	  <div class="heading">Video Gallery</div>
+		<div class="video-container">
+			<div class="video">
+				<video src="video1.mp4"></video>
+			</div>
+			<div class="video">
+				<video src="video2.mp4"></video>
+			</div>
+			<div class="video">
+				<video src="video3.mp4"></video>
+			</div>
+			<div class="video">
+				<video src="video4.mp4"></video>
+			</div>
+			<div class="video">
+				<video src="video5.mp4"></video>
+			</div>
+			<div class="video">
+				<video src="video6.mp4"></video>
+			</div>
+			<div class="video">
+				<video src="video7.mp4"></video>
+			</div>
+			<div class="video">
+				<video src="video8.mp4"></video>
+			</div>
+			<div class="video">
+				<video src="video9.mp4"></video>
+			</div>
+		</div>
+	</div>
+	
+		
+	</div>
+	
+	<div class="footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Digital Corner</a>
+          </div>
+          <p class="website__rights">© Digital Corner 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/yuaris.gokil" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/yuaris_arham/?hl=id" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCUuNzNGOfj79dYgeNhgE2jA" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://soundcloud.com/lone_sheep" class="social__icon--link"
+              ><i class="fab fa-soundcloud"></i
+            ></a>
+            <a href="https://twitter.com/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+	
+<script>
+var video = document.querySelectorAll ('video')
+video.forEach(play => play.addEventListener('click',() => {
+	play.classList.toggle('active');
+	
+	if(play.paused){
+		play.play();
+	}
+	else{
+		play.pause();
+		play.currentTime = 0;
+	}
+	
+}))
+</script>
+</body>
+</html>
